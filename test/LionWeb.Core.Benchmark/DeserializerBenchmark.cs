@@ -34,7 +34,7 @@ public class DeserializerBenchmark : SerializerBenchmarkBase
         _string = JsonSerializer.Serialize((object)new SerializerBuilder()
             .WithLionWebVersion(_lionWebVersion)
             .Build()
-            .SerializeToChunk(SerializerBenchmark.CreateNodes(_maxSize)), _simpleOptions);
+            .SerializeToChunk(SerializerBenchmark.CreateNodes(_maxSize)), _aotOptions);
     }
     
     // [Benchmark]

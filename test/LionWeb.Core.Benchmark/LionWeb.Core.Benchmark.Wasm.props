@@ -1,0 +1,8 @@
+<Project>
+
+    <PropertyGroup>
+        <!-- SEE: https://learn.microsoft.com/en-us/aspnet/core/blazor/javascript-interoperability/?view=aspnetcore-10.0#:~:text=away%2E-,Blazor,attempted -->
+        <JsonSerializerIsReflectionEnabledByDefault>true</JsonSerializerIsReflectionEnabledByDefault>
+    </PropertyGroup>
+
+</Project>

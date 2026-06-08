@@ -26,9 +26,5 @@ public class Program
      * Run WASM benchmarks: `dotnet run -c Release -- --runtimes wasmnet10_0 --wasmEngine node`
      * With AOT:            `dotnet run -c Release -- --runtimes wasmnet10_0 --wasmEngine node --AOTCompilerMode wasm`
      */
-    public static void Main(string[] args)
-    {
-        // new DeserializerBenchmark().Deserialize_StreamX_Aot();
-        BenchmarkSwitcher.FromAssembly(typeof(Program).Assembly).Run(args);
-    }
+    public static async Task Main(string[] args) => await BenchmarkSwitcher.FromAssembly(typeof(Program).Assembly).RunAsync(args);
 }
